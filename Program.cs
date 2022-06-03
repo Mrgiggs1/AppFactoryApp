@@ -21,6 +21,10 @@ namespace FactoryApp
             switch(num)
             {
                 case 1:
+                    enterValues(con);
+                    break;
+                case 2:
+                    Console.WriteLine("database");
                     break;
                 default:
 
