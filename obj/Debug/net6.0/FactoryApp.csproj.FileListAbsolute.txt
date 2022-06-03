@@ -47,3 +47,11 @@ C:\Users\kmanu\source\repos\app Factory\FactoryApp\obj\Debug\net6.0\FactoryApp.g
 C:\Users\kmanu\source\repos\app Factory\FactoryApp\obj\Debug\net6.0\ref\FactoryApp.dll
 C:\Users\kmanu\source\repos\app Factory\FactoryApp\bin\Debug\net6.0\AccessLayer.dll
 C:\Users\kmanu\source\repos\app Factory\FactoryApp\bin\Debug\net6.0\AccessLayer.pdb
+C:\Users\kmanu\source\repos\app Factory\FactoryApp\bin\Debug\net6.0\BouncyCastle.Crypto.dll
+C:\Users\kmanu\source\repos\app Factory\FactoryApp\bin\Debug\net6.0\Google.Protobuf.dll
+C:\Users\kmanu\source\repos\app Factory\FactoryApp\bin\Debug\net6.0\K4os.Compression.LZ4.dll
+C:\Users\kmanu\source\repos\app Factory\FactoryApp\bin\Debug\net6.0\K4os.Compression.LZ4.Streams.dll
+C:\Users\kmanu\source\repos\app Factory\FactoryApp\bin\Debug\net6.0\K4os.Hash.xxHash.dll
+C:\Users\kmanu\source\repos\app Factory\FactoryApp\bin\Debug\net6.0\MySql.Data.dll
+C:\Users\kmanu\source\repos\app Factory\FactoryApp\bin\Debug\net6.0\Ubiety.Dns.Core.dll
+C:\Users\kmanu\source\repos\app Factory\FactoryApp\bin\Debug\net6.0\ZstdNet.dll

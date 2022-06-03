@@ -1,5 +1,8 @@
 ﻿using Microsoft.Data.SqlClient;
 using AccessLayer;
+using MySql.Data.MySqlClient;
+
+
 
 namespace FactoryApp
 {
@@ -14,6 +17,16 @@ namespace FactoryApp
                 var con = new SqlConnection(conString);
                 con.Open();
 
+            var num = 1;
+            switch(num)
+            {
+                case 1:
+                    break;
+                default:
+
+                    break;
+
+            }
             enterValues(con);
 
         }
