@@ -6,21 +6,17 @@ using MySql.Data.MySqlClient;
 
 namespace FactoryApp
 {
-    internal class Program
+    internal class Program : dataAccess //inheritence
     {
         static void Main()
         {
-            string conString = "Server=tcp:appfactory.database.windows.net,1433;Initial Catalog=AFCentral;" +
-                "Persist Security Info=False;User ID=rudolphpuane;Password=Rudolph123;" +
-                " MultipleActiveResultSets=False;Encrypt=True;" +
-                "TrustServerCertificate=False;Connection Timeout=30;";
-                var con = new SqlConnection(conString);
-                con.Open();
+            //this returns connection of database from sqlServer class library of class sqlServer
+            var con = sqlServer.sqlserve();
 
             //procedure for user options to what they want to achieve with the system
             optionValues(con);
-
         }
+
 
         public static void optionValues(SqlConnection con)
         {
@@ -34,6 +30,9 @@ namespace FactoryApp
                     enterValues(con);
                     break;
                 case 2:
+                    Console.WriteLine("read by First Name,Surname, ID or All data");
+                    string search = Console.ReadLine();
+                    readData(search, con);
                     break;
                 default:
 
@@ -72,8 +71,7 @@ namespace FactoryApp
             string positionName = Console.ReadLine();
 
             
-            dataAccess.InsertData(fName, lName, fullName, ID, parkNo, isBirthday, positionName, dep, con);
-
+            InsertData(fName, lName, fullName, ID, parkNo, isBirthday, positionName, dep, con);
         }
 
     }
