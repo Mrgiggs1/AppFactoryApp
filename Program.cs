@@ -17,26 +17,37 @@ namespace FactoryApp
                 var con = new SqlConnection(conString);
                 con.Open();
 
-            var num = 1;
-            switch(num)
+            //procedure for user options to what they want to achieve with the system
+            optionValues(con);
+
+        }
+
+        public static void optionValues(SqlConnection con)
+        {
+            Console.WriteLine("Press the following:\n1-Insert Data \n2-Read Data \n3-Delete Data \n4-Update Data");
+            Console.WriteLine("==========================================================");
+            var num = Console.ReadLine();
+
+            switch (Convert.ToInt32(num))
             {
                 case 1:
                     enterValues(con);
                     break;
                 case 2:
-                    Console.WriteLine("database");
                     break;
                 default:
 
                     break;
 
             }
-            enterValues(con);
 
         }
         public static void enterValues(SqlConnection con)
         {
             string dep;
+            Console.WriteLine("Provide Details");
+            Console.WriteLine("==========================================================\n");
+
             Console.WriteLine("Enter FirstName");
             string fName = Console.ReadLine();
 
