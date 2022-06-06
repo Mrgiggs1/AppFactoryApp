@@ -61,6 +61,9 @@ namespace FactoryApp
             Console.WriteLine("Enter your Parking Spot No.");
             string parkNo = Console.ReadLine();
 
+            Console.WriteLine("Enter your Address");
+            string address = Console.ReadLine();
+
             Console.WriteLine("Do you celebrate Birthdays?");
             string isBirthday = Console.ReadLine();
 
@@ -71,7 +74,7 @@ namespace FactoryApp
             string positionName = Console.ReadLine();
 
             
-            InsertData(fName, lName, fullName, ID, parkNo, isBirthday, positionName, dep, con);
+            InsertData(fName, lName, fullName, ID, address, parkNo, isBirthday, positionName, dep, con);
         }
 
     }
