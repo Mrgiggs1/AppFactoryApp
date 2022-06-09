@@ -34,6 +34,9 @@ namespace FactoryApp
                     string search = Console.ReadLine();
                     readData(search, con);
                     break;
+                case 3:
+                    //deleteFunction
+                    break;
                 default:
 
                     break;
